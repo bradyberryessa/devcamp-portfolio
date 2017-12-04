@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  resources :portfolios
-  get 'pages/home'
+  resources :portfolios, except: [:show]
 
-  get 'pages/about'
+  #to: calls the controller#action and the as: changes the name of the prefix in rake routes
+  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
-  get 'pages/contact'
+  get 'about-me', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
 
   resources :blogs
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # for a 'to' directory, you always have to use the pound sign
+  root to: 'pages#home'
+
 end
