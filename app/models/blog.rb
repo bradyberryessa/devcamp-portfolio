@@ -5,4 +5,6 @@ class Blog < ApplicationRecord
 
 #validates_presence_of is a rails method that doesn't allow empty field entries within a title and a body
   validates_presence_of :title, :body
+
+  belongs_to :topic
 end
