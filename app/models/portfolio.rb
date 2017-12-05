@@ -1,5 +1,8 @@
 class Portfolio < ApplicationRecord
   has_many :technologies
+  accepts_nested_attributes_for :technologies,
+                                reject_if: lambda { |attrs| attrs['name'].blank? }
+
   include Placeholder
 #validates_presence_of is a rails method that doesn't allow empty field entries within a title, body, main_image, and thumb_image
   validates_presence_of :title, :body, :main_image, :thumb_image
