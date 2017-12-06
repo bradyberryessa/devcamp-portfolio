@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :portfolios, except: [:show]
 
   #to: calls the controller#action and the as: changes the name of the prefix in rake routes
