@@ -29,13 +29,14 @@ layout 'portfolio'
 
   def edit
     @portfolio_item = Portfolio.find(params[:id])
+    3.times { @portfolio_item.technologies.build }
   end
 
   def update
     @portfolio_item = Portfolio.find(params[:id])
 
     respond_to do |format|
-      if @portfolio_item.update(portolio_params)
+      if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'The record was successfully updated.' }
       else
         format.html { render :edit }
