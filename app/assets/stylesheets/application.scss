@@ -185,8 +185,9 @@ body {
   float: none;
 }
 
-
-
-
-
+.center-cancellation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
