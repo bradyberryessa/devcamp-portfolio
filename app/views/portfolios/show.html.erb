@@ -21,6 +21,9 @@
       <p><%= t.name %></p>
       <% end %>
 
+      <%= link_to "Edit", edit_portfolio_path, class: 'btn btn-primary' if logged_in?(:site_admin) %>
+
+
     </div>
   </div>
 </div>
