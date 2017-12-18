@@ -20,6 +20,16 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
+          <%= video_tag(
+            'NyanCat.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'code.jpg',
+            )
+            %>
+
           <%= render "shared/application_nav", location: 'top' %>
 
           <%= yield %>
