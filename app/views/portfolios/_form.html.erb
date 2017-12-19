@@ -1,7 +1,7 @@
 <%= form_with(model: @portfolio_item, local: true) do |form| %>
   <% if @portfolio_item.errors.any? %>
     <% @portfolio_item.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, title: "Brady Berryessa Portfolio", sticky: false, time: 10000) %>
+      <%= alert_generator error %>
     <% end %>
   <% end %>
 
