@@ -30,6 +30,7 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
+    @blog.topic_id = 1 if @blog.topic_id.nil?
 
     respond_to do |format|
       if @blog.save
