@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     end
   end
 
+  mount ActionCable.server => '/cable'
+
   # for a 'to' directory, you always have to use the pound sign
   root to: 'pages#home'
 
