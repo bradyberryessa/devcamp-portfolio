@@ -228,3 +228,11 @@ body {
 .tech-news > .card {
   padding: 30px;
 }
+
+.custom-font {
+  font-family: 'Barlow', sans-serif;
+}
+
+.no-underline a:hover {
+  text-decoration: none;
+}

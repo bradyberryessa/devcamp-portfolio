@@ -9,11 +9,12 @@
 
     <META name="keywords" content="<%= @seo_keywords %>" >
 
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="custom-font">
 
     <%= render 'shared/blog_nav' %>
     <%= render 'shared/blog_masthead' %>
