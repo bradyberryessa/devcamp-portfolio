@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
   friendly_id :title, use: :slugged
 
 #validates_presence_of is a rails method that doesn't allow empty field entries within a title and a body
-  validates_presence_of :title, :body
+  validates_presence_of :title, :body, :topic_id
 
   belongs_to :topic
 
