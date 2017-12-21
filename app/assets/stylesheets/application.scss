@@ -236,3 +236,20 @@ body {
 .no-underline a:hover {
   text-decoration: none;
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 20px;
+}
+
+.app-card-container a {
+  color: black;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
