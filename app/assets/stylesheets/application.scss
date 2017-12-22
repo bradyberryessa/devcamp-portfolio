@@ -263,3 +263,17 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.education-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thick-border {
+  border: solid 2px black;
+}
+
+.small-height {
+  height: 50%;
+}
