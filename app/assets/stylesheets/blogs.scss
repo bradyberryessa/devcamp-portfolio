@@ -29,7 +29,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 400;
   color: #333;
 }
@@ -184,6 +184,7 @@ h6,
 
  .comment-card > .card {
   margin-top: 15px;
+  padding: 15px;
  }
 
  .comment-attribution {
@@ -194,3 +195,20 @@ h6,
  .comment-name {
   font-weight: 700;
  }
+
+.custom-font {
+  font-family: 'Barlow', sans-serif;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 35px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}

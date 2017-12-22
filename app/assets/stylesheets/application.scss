@@ -228,3 +228,39 @@ body {
 .tech-news > .card {
   padding: 30px;
 }
+
+.custom-font {
+  font-family: 'Barlow', sans-serif;
+}
+
+.no-underline a:hover {
+  text-decoration: none;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 20px;
+}
+
+.app-card-container a {
+  color: black;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

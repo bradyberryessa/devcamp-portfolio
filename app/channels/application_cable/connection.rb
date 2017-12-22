@@ -14,6 +14,7 @@ module ApplicationCable
 
     def connect
       self.current_user = find_verified_user || guest_user
+      # This allows us to see what's being used in the Terminal
       logger.add_tags 'ActionCable', current_user.email
       logger.add_tags 'ActionCable', current_user.id
     end
