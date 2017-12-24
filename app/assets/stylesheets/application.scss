@@ -46,10 +46,12 @@ body {
   min-height: 100%;
   box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
 }
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -284,4 +286,8 @@ body {
 
 .button-padding {
   padding-top: 10px;
+}
+
+.make-it-look-good {
+  text-align: justify;
 }
