@@ -16,28 +16,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+
   <body class="custom-font">
+
+    <div id="back"></div>
+    <div id="front"></div>
 
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-          <%= video_tag(
-            'Wall-Sketching.mp4',
-            id: 'background',
-            autoplay: true,
-            loop: true,
-            muted: true,
-            poster: 'Wall-Sketching.jpg',
-            )
-            %>
-
           <%= render "shared/application_nav" %>
 
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
-
+          <div class="footer-bottom">
+            <%= render "shared/application_footer" %>
+          </div>
           <%= alerts %>
 
         </div>

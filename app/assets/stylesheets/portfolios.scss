@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "font-awesome";
+
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -70,3 +72,50 @@ footer p {
 .custom-font {
   font-family: 'Barlow', sans-serif;
 }
+
+ .social-links {
+  font-size: 1.5em;
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+ // ******************************************************************
+
+.btn {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 120px
+}
+
+.btn.btn-outline {
+  background: 0 0
+}
+
+.btn-outline.btn-primary {
+  border-color: #2196F3;
+  color: #2196F3;
+}
+
+.btn-outline.btn-primary:focus,
+.btn-outline.btn-primary:hover {
+  color: #FFFFFF;
+  border-color:#2196F3;
+  background-color: #2196F3;
+  font-weight: bold;
+}
+.btn-outline.btn-danger {
+  border-color: #ef1c1c;
+  color: #ef1c1c
+}
+
+.btn-outline.btn-danger:hover {
+  border-color: #ef1c1c;
+  background-color: #ef1c1c;
+  font-weight: bold;
+}
+
+.btn.btn-outline:hover {
+  color: #FFF
+}
+

@@ -212,3 +212,107 @@ h6,
 .blog-sidebar-source {
   margin-top: 20px;
 }
+
+// ============================================= Custom Buttons
+
+.demo-preview {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align:center;
+  width:800px;
+  margin:100px auto;
+}
+
+.demo-preview .btn {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.btn {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 120px
+}
+
+.btn.btn-outline {
+  background: 0 0
+}
+
+.btn-outline.btn-primary {
+  border-color: #2196F3;
+  color: #2196F3
+}
+
+.btn-outline.btn-primary:focus,
+.btn-outline.btn-primary:hover {
+  color: #FFFFFF;
+  border-color:#2196F3;
+  background-color: #2196F3;
+}
+.btn-outline.btn-secondary {
+  border-color: #323a45;
+  color: #323a45
+}
+
+.btn-outline.btn-secondary:focus,
+.btn-outline.btn-secondary:hover {
+  color: #2196F3;
+  border-color:#323a45;
+  background-color: #323a45
+}
+
+.btn-outline.btn-info {
+  border-color: #29B6F6;
+  color: #29B6F6
+}
+
+.btn-outline.btn-info:hover {
+  border-color: #29B6F6;
+  background-color: #29B6F6;
+  color:#FFFFFF;
+}
+
+.btn-outline.btn-default {
+  border-color: #B0BEC5;
+  color: #B0BEC5
+}
+
+.btn-outline.btn-default:hover {
+  background-color: #B0BEC5;
+  border-color: #B0BEC5;
+}
+
+.btn-outline.btn-success {
+  border-color: #64DD17;
+  color: #64DD17
+}
+
+.btn-outline.btn-success:hover {
+  border-color: #64DD17;
+  background-color: #64DD17
+}
+
+.btn-outline.btn-warning {
+  border-color: #FFD600;
+  color: #FFD600
+}
+
+.btn-outline.btn-warning:hover {
+  background-color: #FFD600;
+   border-color: #FFD600;
+}
+
+.btn-outline.btn-danger {
+  border-color: #ef1c1c;
+  color: #ef1c1c
+}
+
+.btn-outline.btn-danger:hover {
+  border-color: #ef1c1c;
+  background-color: #ef1c1c
+}
+
+.btn.btn-outline:hover {
+  color: #FFF
+}
